@@ -6,7 +6,6 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Xingyu's Tech Blog",
-  tagline: "Dinosaurs are cool",
   favicon: "https://github.com/choo-xing-yu.png",
   staticDirectories: ["static"],
   future: {
@@ -22,7 +21,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Choo-Xing-Yu", // Usually your GitHub org/user name.
-  projectName: "tech-blog", // Usually your repo name.
+  projectName: "", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

@@ -8,7 +8,7 @@ const config: Config = {
   title: "Xingyu's Tech Blog",
   tagline: "Dinosaurs are cool",
   favicon: "https://github.com/choo-xing-yu.png",
-
+  staticDirectories: ["static"],
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
@@ -42,10 +42,8 @@ const config: Config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
+          postsPerPage: "ALL",
+          blogSidebarCount: "ALL",
           routeBasePath: "/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
@@ -61,11 +59,10 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: "Tech Blog",
+      title: "Xingyu's Tech Blog",
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Xingyu's Tech Blog`,
     },
     prism: {
       theme: prismThemes.github,
